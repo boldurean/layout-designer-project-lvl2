@@ -1,16 +1,15 @@
 @use "sass:math";
-
-$rem-base: 16px;
+@import "variables";
 
 @function stripUnit($value) {
   @return math.div($value, $value * 0 + 1);
 }
 
-@function px-to-rem($list) {
+@function rem($list) {
   $result: ();
 
   @each $value in $list {
-    $result: append($result, (stripUnit((math.div($value, $rem-base))) * 1rem));
+    $result: append($result, (stripUnit((math.div($value, $base-font-size))) * 1rem));
   }
 
   @return #{$result};
