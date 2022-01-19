@@ -1,0 +1,11 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.5;
+  color: #cacaca;
+  background: #08020d;
+}
+
+/*# sourceMappingURL=style.css.map */

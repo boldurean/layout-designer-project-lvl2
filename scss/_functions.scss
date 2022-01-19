@@ -1,0 +1,17 @@
+@use "sass:math";
+
+$rem-base: 16px;
+
+@function stripUnit($value) {
+   @return math.div($value, $value * 0 + 1);
+}
+
+@function px-to-rem($list) {
+   $result: ();
+
+   @each $value in $list {
+      $result: append($result, (stripUnit((math.div($value, $rem-base))) * 1rem));
+   }
+
+   @return #{$result};
+}
