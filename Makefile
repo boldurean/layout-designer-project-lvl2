@@ -4,6 +4,7 @@ install:
 
 lint:
 	npx eslint .
+	npx htmlhint .
 
 fix:
 	npx eslint . --fix
