@@ -3,15 +3,15 @@
 $rem-base: 16px;
 
 @function stripUnit($value) {
-   @return math.div($value, $value * 0 + 1);
+  @return math.div($value, $value * 0 + 1);
 }
 
 @function px-to-rem($list) {
-   $result: ();
+  $result: ();
 
-   @each $value in $list {
-      $result: append($result, (stripUnit((math.div($value, $rem-base))) * 1rem));
-   }
+  @each $value in $list {
+    $result: append($result, (stripUnit((math.div($value, $rem-base))) * 1rem));
+  }
 
-   @return #{$result};
+  @return #{$result};
 }
