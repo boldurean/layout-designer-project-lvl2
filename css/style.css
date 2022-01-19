@@ -4,6 +4,11 @@
   src: url("../fonts/Roboto-Regular.ttf");
 }
 @font-face {
+  font-weight: 500;
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
   font-weight: 700;
   font-family: "Roboto";
   src: url("../fonts/Roboto-Bold.ttf");
@@ -16,8 +21,9 @@
 
 html {
   line-height: 1.5;
-  color: #cacaca;
-  background: #08020d;
+  font-size: 18px;
+  background: #08020D;
+  color: #CACACA;
 }
 
 /*# sourceMappingURL=style.css.map */
