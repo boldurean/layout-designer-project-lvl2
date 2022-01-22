@@ -20,10 +20,16 @@
 }
 
 html {
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   font-size: 18px;
   background: #08020D;
   color: #CACACA;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -40,9 +46,27 @@ h2 {
   text-transform: uppercase;
 }
 
+a {
+  text-decoration: none;
+}
+
 .desktop-container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+#page-description {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  position: absolute;
+  width: 1200px;
+  top: 25px;
+  display: flex;
+  align-items: center;
 }
 
 .logo-container {
@@ -60,11 +84,11 @@ h2 {
   font-size: 0.6111111111rem;
 }
 
-.header-links {
+.header-links ul {
+  width: 313px;
   display: flex;
   align-items: center;
-}
-.header-links ul {
+  justify-content: space-between;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -73,6 +97,69 @@ h2 {
   font-size: 0.6111111111rem;
   text-transform: uppercase;
   color: #CACACA;
+}
+
+.search-container {
+  margin-left: auto;
+}
+.search-container input {
+  padding: 5px 10px;
+  width: 248px;
+  height: 25px;
+  border: none;
+  border-radius: 50px;
+  background-color: #3C3B3D;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  color: #FFFFFF;
+}
+.hero span {
+  display: block;
+}
+.hero h1, .hero h2, .hero span {
+  text-align: center;
+  margin: 0;
+}
+.hero-form {
+  max-width: 570px;
+  margin: 17px auto 0;
+}
+.hero-form .inputs-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-form .inputs-wrapper input {
+  min-width: 270px;
+  min-height: 50px;
+  border: 2px solid #CACACA;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: #FFFFFF;
+  background: transparent;
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+}
+.hero-form .inputs-wrapper input::placeholder {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.hero-form button {
+  width: 100%;
+  color: #FFFFFF;
+  font-size: 13.3px;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  background: #34C176;
+  border: none;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

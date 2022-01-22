@@ -1,0 +1,62 @@
+@import "variables";
+@import "functions";
+
+.hero {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   padding-top: 200px;
+   padding-bottom: 200px;
+
+   color: $white;
+
+   & span {
+      display: block;
+   }
+
+   & h1, h2, span {
+      text-align: center;
+      margin: 0;
+   }
+
+   &-form {
+      max-width: 570px;
+      margin: 17px auto 0;
+
+      .inputs-wrapper {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+
+         & input {
+            min-width: 270px;
+            min-height: 50px;
+            border: 2px solid $gray;
+            box-sizing: border-box;
+            border-radius: 3px;
+            color: $white;
+            background: transparent;
+            padding-left: 20px;
+            margin-bottom: 1.5rem;
+
+            &::placeholder {
+               font-size: 14px;
+               color: $white;
+            }
+         }
+      }
+
+      button {
+         width: 100%;
+         color: $white;
+         font-size: 13.3px;
+         text-transform: uppercase;
+         padding: 20px 30px;
+         background: $green;
+         border: none;
+         border-radius: 5px;
+      }
+   }
+}

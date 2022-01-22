@@ -7,10 +7,16 @@
 }
 
 html {
+  font-family: "Roboto", sans-serif;
   line-height: $base-line-height;
   font-size: $base-font-size;
   background: $dark;
   color: $gray;
+}
+
+body {
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
@@ -19,11 +25,16 @@ h1 {
   font-weight: bold;
   text-transform: uppercase;
 }
+
 h2 {
   font-size: rem(38px);
   line-height: rem(57px);
   font-weight: bold;
   text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
 }
 
 
