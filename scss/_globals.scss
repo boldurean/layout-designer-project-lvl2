@@ -1,5 +1,5 @@
 @import "variables";
-
+@import "functions";
 *,
 *:before,
 *:after {
@@ -11,4 +11,23 @@ html {
   font-size: $base-font-size;
   background: $dark;
   color: $gray;
+}
+
+h1 {
+  font-size: rem(60px);
+  line-height: rem(90px);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: rem(38px);
+  line-height: rem(57px);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.desktop-container {
+  max-width: $desktop-container-width;
+  margin: 0 auto;
 }

@@ -1,0 +1,34 @@
+@import "functions";
+
+.logo-container {
+   display: flex;
+   align-items: center;
+   margin-right: rem(90);
+
+   & img {
+      margin-right: 16px;
+      height: 24px;
+      width: 24px;
+   }
+   & .logo-text {
+      text-transform: uppercase;
+      font-size: rem(11);
+   }
+}
+
+.header-links {
+   display: flex;
+   align-items: center;
+
+   & ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      & a {
+         font-size: rem(11);
+         text-transform: uppercase;
+         color: $gray;
+      }
+   }
+}

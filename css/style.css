@@ -26,4 +26,53 @@ html {
   color: #CACACA;
 }
 
+h1 {
+  font-size: 3.3333333333rem;
+  line-height: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.1111111111rem;
+  line-height: 3.1666666667rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.desktop-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+}
+.logo-container img {
+  margin-right: 16px;
+  height: 24px;
+  width: 24px;
+}
+.logo-container .logo-text {
+  text-transform: uppercase;
+  font-size: 0.6111111111rem;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+}
+.header-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header-links ul a {
+  font-size: 0.6111111111rem;
+  text-transform: uppercase;
+  color: #CACACA;
+}
+
 /*# sourceMappingURL=style.css.map */
